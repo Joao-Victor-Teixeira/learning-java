@@ -96,3 +96,36 @@ DTO e tratamento de exceções
  ┣ 📂 spring-jpa
  ┣ 📂 spring-mongodb
  ┗ 📜 README.md
+
+🚀 Como Executar
+
+Clone este repositório:
+
+git clone https://github.com/Joao-Victor-Teixeira/learning-java
+
+
+Abra no VS Code ou IntelliJ
+
+Compile e execute cada módulo/projeto conforme descrito em suas pastas
+
+✅ Tecnologias Utilizadas
+
+Java
+
+Git e GitHub
+
+MySQL e JDBC
+
+JavaFX
+
+Spring Boot
+
+JPA / Hibernate
+
+MongoDB
+
+✨ Créditos
+
+Curso ministrado por Dr. Nélio Alves
+Disponível na Udemy
+.
