@@ -1,0 +1,56 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "entrada_dados7",
+            "request": "launch",
+            "mainClass": "entrada_dados7",
+            "projectName": "entrada-dados_6911c9fc"
+        },
+        {
+            "type": "java",
+            "name": "entrada_dados6",
+            "request": "launch",
+            "mainClass": "entrada_dados6",
+            "projectName": "entrada-dados_6911c9fc"
+        },
+        {
+            "type": "java",
+            "name": "entrada_dados4",
+            "request": "launch",
+            "mainClass": "entrada_dados4",
+            "projectName": "entrada-dados_6911c9fc"
+        },
+        {
+            "type": "java",
+            "name": "entrada_dados3",
+            "request": "launch",
+            "mainClass": "entrada_dados3",
+            "projectName": "entrada-dados_6911c9fc"
+        },
+        {
+            "type": "java",
+            "name": "entrada_dados2",
+            "request": "launch",
+            "mainClass": "entrada_dados2",
+            "projectName": "entrada-dados_6911c9fc"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "entrada_dados",
+            "request": "launch",
+            "mainClass": "entrada_dados",
+            "projectName": "entrada-dados_6911c9fc"
+        }
+    ]
+}
