@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "testeMesa1",
+      "request": "launch",
+      "mainClass": "testeMesa1",
+      "projectName": "Estrutura_repeticao_e5cf8324"
+    },
+    {
+      "type": "java",
+      "name": "while01",
+      "request": "launch",
+      "mainClass": "while01",
+      "projectName": "Estrutura_repeticao_e5cf8324"
+    },
+    {
+      "type": "java",
+      "name": "debug",
+      "request": "launch",
+      "mainClass": "debug",
+      "projectName": "Estrutura_repeticao_e5cf8324"
+    },
+    {
+      "type": "java",
+      "name": "Rodar Arquivo Atual",
+      "request": "launch",
+      "mainClass": "${fileBasenameNoExtension}",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "java",
+      "name": "Rodar Exercício 1",
+      "request": "launch",
+      "mainClass": "exercicio1",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
