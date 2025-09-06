@@ -21,9 +21,7 @@ public class posto {
             else if (opc == 3){
                 diesel += 1;
             }
-           
-            
-            
+                       
             opc = sc.nextInt();
         }
         System.out.println("MUITO OBRIGADO");
