@@ -17,23 +17,20 @@ public class App {
         x.b = sc.nextDouble();
         x.c = sc.nextDouble();
         
-        double P = (x.a + x.b + x.c) /2;
-        double areax = Math.sqrt(P * (P - x.a) * (P - x.b ) * (P - x.c));
-         
+        double areaX = x.area();
+        
         System.out.println("Digite os 3 lados do triangulo Y");
         y.a = sc.nextDouble();
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
-
-        double P2 = (y.a + y.b + y.c) / 2;
-        double areay = Math.sqrt(P2 * (P2 - y.a) * (P2 - y.b) * (P2 - y.c));
         
-        
-        System.out.printf("Area do triangulo X : %.4f %n",areax);
-        System.out.printf("Area do triangulo Y : %.4f %n",areay);
+        double areaY = y.area();
+
+        System.out.printf("Area do triangulo X : %.4f %n",areaX);
+        System.out.printf("Area do triangulo Y : %.4f %n",areaY);
 
 
-        if (areax > areay) {
+        if (areaX > areaY) {
             System.out.println("Maior area : Triangulo X");
         }
         else{
