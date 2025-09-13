@@ -2,9 +2,10 @@ package entidades;
 
 public class Produtos {
     
-    public String nome;
-    public double preco;
-    public int quantidade;
+    //Encapsulando os atributos para não ter acesso diretamente por outras classes.
+    private String nome;
+    private double preco;
+    private int quantidade;
 
     // Declarando o construtor padrão manualmente
     public Produtos(){
@@ -22,6 +23,33 @@ public class Produtos {
         this.nome = nome;
         this.preco = preco;
     }
+
+    // Método que permite mudar o atributo nome 
+    public void setNome(String nome){
+        this.nome = nome ;
+    }
+
+    // Método que permite o programa principal pegar esse nome
+    public String getNome(){
+        return nome;
+    }
+
+    // Método que permite ler o atribudo preco
+    public double getPreco(){
+        return preco;
+    }
+
+    // Método que permite o programa principal modificar esse preço
+    public void setPreco(double preco){
+        this.preco = preco;
+    }
+    
+    // Método que permite verificar o estoque, mas por regras de negocios só podemos alterar o valor do estoque caso 
+    // tenha uma entrada ou uma saída 
+    public int getQuantidade() {
+        return quantidade;
+    }
+
 
     public double valorTotalEmEstoque() {
         return preco * quantidade;

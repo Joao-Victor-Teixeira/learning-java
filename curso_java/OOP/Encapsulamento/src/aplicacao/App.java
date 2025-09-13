@@ -10,8 +10,6 @@ public class App {
         
         Locale.setDefault(Locale.US);
         Scanner sc =new Scanner(System.in);
-        // Declaramos esse construtor padrão pra ter acesso as 3 versões
-        //Produtos p = new Produtos();
 
 
         System.out.println("Entre com os dados do produto: ");
@@ -21,9 +19,25 @@ public class App {
         
         System.out.print("Preço: ");
         double preco = sc.nextDouble();
-
         Produtos produto = new Produtos(nome, preco);
 
+       /*
+         produto.nome = "Computador" Desa forma não é possivel alterar o nome do produto.
+        */
+       
+        // Após criar um método que possibilida a mudança de atrbutos essa é a forma correta de fazer a atribuição.
+        produto.setNome("Computador");
+        // Após criar o metodo que permite pegar o nome do produto podemos pedir para exibi-lo;
+        System.out.println("Nome após o metodo getNome: " + produto.getNome());
+       
+       // Após criar od métodos getPreco e Set preco podemos fazer as alterações e acessar os dados
+       produto.setPreco(1200.00);
+       System.out.println("Preço após as alterações: " + produto.getPreco());
+       
+       //Propsitalmente deixei esse método para mostrar a "proteção" que foi feito pelo Encapsulamento
+       produto.setQuantidade();
+       
+       
         System.out.println();
         System.out.println("Dados do produto:" + produto);
 
