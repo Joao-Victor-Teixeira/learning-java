@@ -10,13 +10,13 @@ public class App {
         
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        ContaBancaria conta = new ContaBancaria(0, null, 0);
+        ContaBancaria conta ;
 
         System.out.print("Entre com o número da conta: ");
-        conta.numeroct(sc.nextInt());
+        int numeroct = sc.nextInt();
         sc.nextLine();
         System.out.print("Nome do titular da conta: ");
-        conta.nome(sc.nextLine());
+        String nome = sc.nextLine();
         
         
         char resp;
@@ -29,23 +29,23 @@ public class App {
         if (resp == 's') {
             System.out.print("Digite o valor do depósito inicial: ");
             double valorDeposito = sc.nextDouble();
-            conta.depositar(valorDeposito);
-            sc.nextLine(); // Limpa o buffer
+            conta = new ContaBancaria(numeroct, nome, valorDeposito);
+        }else{
+            conta = new ContaBancaria(numeroct, nome);
         }
-        
+
         System.out.println("Dados da conta:");
-        System.out.printf("Conta %d , Titular %s , Saldo R$ %.2f %n", conta.getNumeroConta(), conta.getNome(), conta.getSaldo());
-        
+        System.out.println(conta);        
         System.out.print("Digite o valor do depósito: ");
         conta.depositar(sc.nextDouble());
         System.out.println("Dados atualizados:");
-        System.out.printf("Conta %d, Titular %s , Saldo R$ %.2f %n", conta.getNumeroConta(), conta.getNome(),  conta.getSaldo());
+        System.out.println(conta);
         
         System.out.print("Digite o valor do saque: ");
         double valorSaque = sc.nextDouble();
         conta.saque(valorSaque);
         System.out.println("Dados atualizados:");
-        System.out.printf("Conta %d, Titular %s , Saldo R$ %.2f %n", conta.getNumeroConta(), conta.getNome(),  conta.getSaldo());
+        System.out.println(conta);
         sc.close();
     }
 }

@@ -12,19 +12,23 @@ public class ContaBancaria {
     private double saldo;
 
     
-    //Construtor da classe ContaBancaria
+    //Construtor da classe ContaBancaria com 3 argumentos
     public ContaBancaria(int numeroConta ,String nome, double saldo) {
         this.nome = nome;
         this.saldo = saldo;
         this.numeroConta = numeroConta;
     }
    
+    //Construtor da classe ContaBancaria com 2 argumentos
+     public ContaBancaria(int numeroConta, String nome) {
+        this.numeroConta = numeroConta;
+        this.nome = nome;
+    }
     // Método que permite acessar o número da conta mas não modificar-lo
      public int getNumeroConta() {
         return numeroConta;
     }
 
-    
     // Método que permite acessar o nome do titular da conta
     public String getNome() {
         return nome;
@@ -33,6 +37,7 @@ public class ContaBancaria {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
     // Método que permite acessar o saldo da conta 
     public double getSaldo() {
         return saldo;
@@ -47,7 +52,6 @@ public class ContaBancaria {
         return this.numeroConta = numeroConta;
     }
 
-
     // Implementação da lógica de saque e deposito
 
     public double depositar(double deposito){
@@ -56,6 +60,15 @@ public class ContaBancaria {
     
     public double saque(double saque){
         return this.saldo  -= saque + TAXA;
+    }
+
+    public String toString(){
+       return "Conta "
+        + numeroConta
+        + ", Titular: "
+        + nome
+        + ", Saldo R$ "
+        + String.format("%.2f", saldo);
     }
 }
 
