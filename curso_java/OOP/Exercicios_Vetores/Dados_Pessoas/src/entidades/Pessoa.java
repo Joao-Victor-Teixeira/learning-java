@@ -4,9 +4,15 @@ public class Pessoa {
     
     private char genero;
     private double altura;
-    public Pessoa(char genero, double altura) {
+    public Pessoa( double altura ,char genero) {
         
         this.genero = genero;
+        this.altura = altura;
+    }
+        public double getAltura() {
+        return altura;
+    }
+    public void setAltura(double altura) {
         this.altura = altura;
     }
     public char getGenero() {
@@ -15,11 +21,6 @@ public class Pessoa {
     public void setGenero(char genero) {
         this.genero = genero;
     }
-    public double getAltura() {
-        return altura;
-    }
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
+
     
 }

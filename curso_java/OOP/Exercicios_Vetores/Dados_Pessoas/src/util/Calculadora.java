@@ -26,7 +26,8 @@ public class Calculadora {
         int contador = 0;
         double alturaMulheres = 0;
         for (int i = 0; i < pessoas.length; i++) {
-            if (pessoas[i].getGenero() == 'F') {
+            char genero = pessoas[i].getGenero();
+            if (Character.toUpperCase(genero) == 'F') { // Correção para não bugar caso digite em minusculo
                 alturaMulheres += pessoas[i].getAltura();
                 contador++;
             }
@@ -39,7 +40,8 @@ public class Calculadora {
     public static int numeroHomes(Pessoa[] pessoas){
         int contadorHomens = 0;
         for (int i = 0; i < pessoas.length; i++) {
-            if (pessoas[i].getGenero() == 'M') {
+            char genero = pessoas[i].getGenero();
+            if (Character.toUpperCase(genero) == 'M') {
                contadorHomens ++; 
             }
         }
