@@ -24,7 +24,7 @@ public class App {
         Comentario c3 = new Comentario("Boa noite.");
         Comentario c4 = new Comentario("Que a força esteja com você!"); 
          
-         Post p2 = new Post(LocalDateTime.parse("28/06/2018 23:14:19", fmt), "Boa noite galera",
+        Post p2 = new Post(LocalDateTime.parse("28/06/2018 23:14:19", fmt), "Boa noite galera",
           "Vejo você amanhã", 5);
         
         p2.adicionarComentario(c3);
