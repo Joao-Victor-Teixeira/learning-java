@@ -1,0 +1,26 @@
+package application;
+
+import java.util.Scanner;
+
+import services.PrintService;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+        PrintService prt = new PrintService();
+
+        System.out.print("Digite quantos valores ");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            int value = sc.nextInt();
+            prt.addValue(value);
+        }
+
+        prt.print();
+        Integer x = prt.first();
+        System.out.println("Primeiro valor digitado: " + x);
+        sc.close();
+    }
+}
