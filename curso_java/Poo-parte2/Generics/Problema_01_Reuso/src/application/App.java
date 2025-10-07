@@ -8,10 +8,12 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
-        PrintService prt = new PrintService();
+        PrintService<Integer> prt = new PrintService<>();
 
         System.out.print("Digite quantos valores ");
         int n = sc.nextInt();
+
+        //prt.addValue("Maria"); Garante a segurança de tipos, não aceita Strings nesse caso
 
         for (int i = 0; i < n; i++) {
             int value = sc.nextInt();
