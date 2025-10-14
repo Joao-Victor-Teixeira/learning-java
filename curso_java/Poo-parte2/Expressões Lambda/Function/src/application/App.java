@@ -18,7 +18,7 @@ public class App {
         prod.add(new Product("Tablet", 350.00));
         prod.add(new Product("Hd Case", 80.90));
 
-        List <String> names = prod.stream().map(Product:: staticUpperCase).collect(Collectors.toList());
+        List <String> names = prod.stream().map(Product:: nonStaticUpperCaseNaem).collect(Collectors.toList());
 
         names.forEach(System.out::println);
 

@@ -62,11 +62,11 @@ public class Product {
         } else if (!price.equals(other.price))
             return false;
         return true;
-    }
-
-    public static String staticUpperCase(Product p) {
-        return p.getName().toUpperCase();
     }    
+
+    public String nonStaticUpperCaseNaem() {
+        return getName().toUpperCase();
+    }
 
     @Override
     public String toString() {
