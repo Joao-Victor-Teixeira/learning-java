@@ -2,9 +2,9 @@ package application;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 import entities.Product;
-import util.PriceUpdate;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -17,7 +17,13 @@ public class App {
         prod.add(new Product("Tablet", 350.00));
         prod.add(new Product("Hd Case", 80.90));
 
-        prod.forEach(Product:: priceUpdate);
+        double factor = 1.1;
+
+        Consumer<Product> cons = p -> {
+            p.setPrice(p.getPrice() * factor);
+        };
+
+        prod.forEach(cons);
 
         prod.forEach(System.out::println);
     }
