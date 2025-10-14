@@ -16,7 +16,7 @@ public class App {
         prod.add(new Product("Tablet", 350.0));
         prod.add(new Product("HD Case", 80.90));
 
-        prod.removeIf(new ProductPredicate());
+        prod.removeIf(Product:: staticProductPredicate);
 
         prod.forEach(System.out::println);
     }
