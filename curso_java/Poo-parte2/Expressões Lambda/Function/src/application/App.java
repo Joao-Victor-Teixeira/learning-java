@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import entities.Product;
-import util.UpperCaseName;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -19,7 +18,7 @@ public class App {
         prod.add(new Product("Tablet", 350.00));
         prod.add(new Product("Hd Case", 80.90));
 
-        List <String> names = prod.stream().map(new UpperCaseName()).collect(Collectors.toList());
+        List <String> names = prod.stream().map(Product:: staticUpperCase).collect(Collectors.toList());
 
         names.forEach(System.out::println);
 
