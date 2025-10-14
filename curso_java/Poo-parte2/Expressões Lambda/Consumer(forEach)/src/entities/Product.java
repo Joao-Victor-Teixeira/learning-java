@@ -64,6 +64,9 @@ public class Product {
         return true;
     }
 
+    public static void priceUpdate(Product p) {
+         p.setPrice(p.getPrice() * 1.1);
+    }
 
     @Override
     public String toString() {

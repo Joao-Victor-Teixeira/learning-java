@@ -17,7 +17,7 @@ public class App {
         prod.add(new Product("Tablet", 350.00));
         prod.add(new Product("Hd Case", 80.90));
 
-        prod.forEach(new PriceUpdate());
+        prod.forEach(Product:: priceUpdate);
 
         prod.forEach(System.out::println);
     }
