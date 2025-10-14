@@ -16,9 +16,7 @@ public class App {
         prod.add(new Product("Tablet", 350.0));
         prod.add(new Product("HD Case", 80.90));
 
-        Predicate<Product> pred = p -> p.getPrice() >= 100.0;
-
-        prod.removeIf(pred);
+        prod.removeIf( p -> p.getPrice() >= 100.0);
 
         prod.forEach(System.out::println);
     }
