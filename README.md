@@ -1,131 +1,57 @@
-📘 Curso Java COMPLETO - Nelio Alves
+# 📘 Curso Java COMPLETO - Nelio Alves
 
-Repositório com meus estudos e práticas do curso Java COMPLETO - Programação Orientada a Objetos + Projetos do professor Nélio Alves
-.
+
+> ⚠️ **Nota Importante:** Este repositório **NÃO** é um portfólio de projetos finalizados. Este é o meu **"Diário de Bordo"** de aprendizado, onde documento meu progresso, exercícios e anotações enquanto construo minha base em Java.
+
 Aqui registro todos os exercícios, exemplos e projetos desenvolvidos ao longo da formação.
 
-📚 Conteúdo do Curso
-🔹 Lógica de Programação e Fundamentos
+---
 
-Conceitos de programação
+## 📚 Jornada de Aprendizado (Conteúdo do Curso)
 
-Estrutura sequencial
+Este é o roteiro completo do curso. Estou a usar este repositório para registrar os exercícios de cada tópico, marcando o meu progresso:
 
-Estrutura condicional
+### ✅ Módulo 1: Lógica de Programação e Fundamentos
+*(Status: 100% Concluído)*
+* Conceitos de programação
+* Estrutura sequencial
+* Estrutura condicional
+* Estruturas repetitivas
+* Introdução à linguagem Java
 
-Estruturas repetitivas
+### ✅ Módulo 2: Programação Orientada a Objetos (Parte 1)
+*(Status: 100% Concluído)*
+* Introdução à POO
+* Construtores, palavra this, sobrecarga, encapsulamento
+* Comportamento de memória, arrays, listas
+* Tópicos especiais em Java
+* Enumerações, composição
+* 📌 *Projeto (Módulo): Sistema Jogo de Xadrez*
 
-Introdução à linguagem Java
+### ✅ Módulo 3: Programação Orientada a Objetos (Parte 2)
+*(Status: 100% Concluído)*
+* Herança e polimorfismo
+* Tratamento de exceções
 
-🔹 Programação Orientada a Objetos (Parte 1)
+### ✅ Módulo 4: Programação Funcional
+*(Status: 100% Concluído)*
+* Trabalhando com arquivos
+* Interfaces
+* Generics, Set, Map
+* Programação funcional e expressões lambda (Predicate, Consumer, Function)
+* Streams API (pipeline, filter, map, reduce, collect)
 
-Introdução à POO
+## 🗂️ Estrutura Atual do Repositório
 
-Construtores, palavra this, sobrecarga, encapsulamento
+📦 curso_java
+ ┣ 📂 fundamentos        (Módulos 1 e 2)
+ ┣ 📂 poo-parte1         (Módulo 3)
+ ┣ 📂 poo-parte2         (Módulos 4)
 
-Comportamento de memória, arrays, listas
-
-Tópicos especiais em Java
-
-Enumerações, composição
-
-Herança e polimorfismo
-
-Tratamento de exceções
-
-📌 Projeto: Sistema Jogo de Xadrez
-
-🔹 Programação Orientada a Objetos (Parte 2) + Programação Funcional
-
-Trabalhando com arquivos
-
-Interfaces
-
-Generics, Set, Map
-
-Programação funcional e expressões lambda
-
-🔹 Banco de Dados e Aplicações Desktop
-
-JDBC e acesso a banco de dados
-
-Interface Gráfica com JavaFX
-
-Padrão MVC (Model-View-Controller)
-
-CRUD completo com MySQL
-
-📌 Projeto: Aplicação Desktop com JavaFX + MySQL
-
-🔹 Web Services com Spring Boot
-
-Web e HTTP
-
-REST / Web Services
-
-JPA / Hibernate (ORM)
-
-Modelo de domínio complexo
-
-Maven e Spring Data JPA
-
-CRUD completo e tratamento de exceções
-
-📌 Projeto: Web Services com Spring Boot + JPA / Hibernate
-
-🔹 Web Services com Spring Boot e NoSQL
-
-NoSQL e MongoDB
-
-Modelo de domínio com agregados e desnormalização
-
-Spring Data MongoDB
-
-CRUD completo
-
-DTO e tratamento de exceções
-
-📌 Projeto: Web Services com Spring Boot + MongoDB
-
-🗂️ Estrutura do Repositório
-📦 curso-java
- ┣ 📂 fundamentos
- ┣ 📂 poo-parte1
- ┣ 📂 poo-parte2
- ┣ 📂 jdbc-javafx
- ┣ 📂 spring-jpa
- ┣ 📂 spring-mongodb
  ┗ 📜 README.md
 
-🚀 Como Executar
+## 🚀 Como Executar
 
 Clone este repositório:
-
-git clone https://github.com/Joao-Victor-Teixeira/learning-java
-
-
-Abra no VS Code ou IntelliJ
-
-Compile e execute cada módulo/projeto conforme descrito em suas pastas
-
-✅ Tecnologias Utilizadas
-
-Java
-
-Git e GitHub
-
-MySQL e JDBC
-
-JavaFX
-
-Spring Boot
-
-JPA / Hibernate
-
-MongoDB
-
-✨ Créditos
-
-Curso ministrado por Dr. Nélio Alves
-Disponível na Udemy
-.
+```bash
+git clone [https://github.com/Joao-Victor-Teixeira/learning-java](https://github.com/Joao-Victor-Teixeira/learning-java)
